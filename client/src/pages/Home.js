@@ -21,8 +21,7 @@ function Home() {
           setLikedPosts(response.data.likedPosts.map((like) => like.PostId));
         });
     }
-  }, [history]); // ✅ أضف history لتفادي التحذير
-
+  }, [history]); 
   const likeAPost = (postId) => {
     axios
       .post(
